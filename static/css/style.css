@@ -1,0 +1,154 @@
+body {
+    margin: 0 auto;
+    background: black;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: blue;
+}
+
+.link:active {
+    text-decoration: none;
+}
+
+.btn_a {
+    background: #000000;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    transition: 0.2s ease;
+}
+
+.btn_a:hover {
+    background: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: black;
+    font-size: 1em;
+    transition: 0.1s ease;
+}
+
+.btn_a:active {
+    background: #000000;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    font-size: 1em;
+    transition: 0.05s ease;
+}
+
+.btn_b {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 5px solid blue;
+    border-radius: 0%;
+    transition: 0.2s ease;
+}
+
+.btn_b:hover {
+    border-width: 10px;
+    transition: 0.2s ease;
+}
+
+.btn_b:active {
+    border-color: white;
+    transition: 0.05s ease;
+}
+
+.minilog_a {
+    border: 2px dashed white;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+#box1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to right, #50fffc, #DC63DE);
+}
+
+#box1_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1_1_1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#box2 {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+}
+
+#box2_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#box2_1_1 {
+    text-align: left;
+    display: inline;
+}
+
+#box2_1_2 {
+    text-align: right;
+}
+
+#box2_3 {
+    padding-bottom: 1em;
+}
+
+#modules {
+    display: none;
+}
+
+#box3 {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#docs_box1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 2em;
+}
+
+.list h4 {
+    display: inline;
+    font-weight: lighter;
+}
+
+.list {
+    line-height: 2em;
+}
+
+#docs_box1 div {
+    flex-basis: 300px;
+}
+
+#docs_box1_1 {
+    background:white;
+    color:black;
+    padding: 20px 100px 35px 100px;
+}
