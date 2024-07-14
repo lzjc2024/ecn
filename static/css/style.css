@@ -3,6 +3,14 @@ body {
     background: black;
 }
 
+canvas {
+    position: absolute;
+    z-index: -1;
+    width: 800px;
+    height: 533px;
+    display: none;
+}
+
 .link {
     color: white;
     text-decoration: underline;
@@ -147,8 +155,13 @@ body {
     flex-basis: 300px;
 }
 
-#docs_box1_1 {
+.docs_box1_1 {
     background:white;
     color:black;
     padding: 20px 100px 35px 100px;
+}
+
+.halfsize {
+    width:50%;
+    height:50%;
 }
