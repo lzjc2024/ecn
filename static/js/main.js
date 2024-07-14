@@ -7,7 +7,8 @@ window.onload = function () {
         'struct': '组织结构变迁',
         'progress': '进步意义',
         'geng': '梗',
-        'about': '关于本站'
+        'about': '关于本站',
+        'notice': '公告'
     };
 
     var modules = document.getElementById('modules');
@@ -20,7 +21,11 @@ window.onload = function () {
         var loc_split = modules.title.split('-');
         var locTxt = '';
         for (var i = 0; i < loc_split.length; i++) {
-            locTxt += loc_dict[loc_split[i]];
+            add = loc_dict[loc_split[i]];
+            if (add == undefined) {
+                add = loc_split[i];
+            }
+            locTxt += add;
             if (i < loc_split.length - 1) {
                 locTxt += '-';
             }
@@ -62,7 +67,7 @@ window.onload = function () {
     }, 10);
 
     var backBtn = document.getElementById('back');
-    backBtn.onclick = function() {
+    backBtn.onclick = function () {
         var newLoc = '';
         for (var i = 0; i < modules.title.split('-').length - 1; i++) {
             newLoc += modules.title.split('-')[i];
