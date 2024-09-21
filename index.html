@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>徒步驴友交流协会 - 传送门</title>
+    <style>
+        body {
+            margin: 0;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>徒步驴友交流协会 - 传送门【ECN - Portal】</h1>
+    <hr>
+    <p>
+        进入主站👉：<a id="link" target="_blank"></a>&emsp;<i>※一般情况下此链接每24小时最多失效约30分钟</i>
+    </p>
+    <p>
+        主站地址上次变更于：<span id="lstUpdt"></span>
+    </p>
+    <script src="url.js"></script>
+    <script>
+        var link = document.getElementById('link');
+        link.innerHTML = url;
+        link.href = url;
+        var lstUpdt = document.getElementById('lstUpdt');
+        lstUpdt.innerHTML = lastTime;
+    </script>
+</body>
+
+</html>
